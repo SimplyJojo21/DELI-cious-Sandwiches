@@ -33,7 +33,7 @@ public class Order {
     }
 
     public double getTotal() {
-        double total = 0;
+        double total = 0.00;
         for (Sandwich sandwich : sandwiches) {
             total += sandwich.getPrice();
         }

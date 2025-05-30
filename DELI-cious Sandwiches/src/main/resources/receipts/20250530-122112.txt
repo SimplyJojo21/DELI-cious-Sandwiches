@@ -1,0 +1,11 @@
+Sandwich:
+4" 2 (toasted)
+Meats: [3 (extra), 4 (extra), 1]
+Cheeses: [3 (extra), 4]
+Toppings: [1, 2, 3]
+Sauces: [5, 1]
+Price: $8.55
+
+Drink: small 6 - $2.00
+Chips: 4 - $1.50
+Total: $12.05
