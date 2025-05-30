@@ -39,7 +39,7 @@ public class UserInterface {
     }
 
     public String promptForMeat() {
-        System.out.print("Enter a meat (or 'done' to finish): ");
+        System.out.print("Enter a meat (chicken, steak, salami, roast beef, bacon, tofu) (or 'done' to finish): ");
         return scanner.nextLine();
     }
 
