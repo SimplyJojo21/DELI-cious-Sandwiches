@@ -1,7 +1,7 @@
 # DELI-cious-Sandwiches
 Capstone #2: create a working deli
 
-Intersting Piece of Code:
+Interesting Piece of Code:
 __________________________
 The most interesting (and satisfying) piece of code I did was converting my String properties to Integers to allow for integer user input. I also loved how I figured out how to update my Receipt Writer class to display all my receipts by time and date in descending order starting from the newest receipt first. I initially did not have a separate Receipt package in resorces and included it in my Application class, so it was printing the receipt history in checkout. I liked this because it challenged me to dive deeper into my code, and I actually saw how easy it is to parse, as well as remove lines of code I saw were the issue without even having to debug. I would have liked to do more with my summary output, like print Strings of menu items instead of numbers. But all in all, it was fun and I had a blast!
 
