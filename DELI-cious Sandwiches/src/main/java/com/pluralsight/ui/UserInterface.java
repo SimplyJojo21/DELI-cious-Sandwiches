@@ -3,7 +3,7 @@ package com.pluralsight.ui;
 import java.util.Scanner;
 
 public class UserInterface {
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public int showHomeScreen() {
         System.out.println("=== Welcome to DELI-cious Sandwiches ===");
@@ -61,9 +61,15 @@ public class UserInterface {
         return scanner.nextLine().equalsIgnoreCase("yes");
     }
 
-    public String promptForCheese() {
-        System.out.print("Enter a cheese (American, Swiss, Pepper Jack, Cheddar) (or 'done' to finish): ");
-        return scanner.nextLine();
+    public Integer promptForCheese() {
+        System.out.print("Enter cheese type:");
+        System.out.println("\n1) American");
+        System.out.println("2) Swiss");
+        System.out.println("3) Pepper Jack");
+        System.out.println("4) Cheddar");
+        System.out.println("5) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public boolean promptForExtraCheese() {
@@ -71,14 +77,29 @@ public class UserInterface {
         return scanner.nextLine().equalsIgnoreCase("yes");
     }
 
-    public String promptForTopping() {
-        System.out.print("Enter a topping (lettuce, tomatoes, onions, peppers, pickles, olives) (or 'done' to finish): ");
-        return scanner.nextLine();
+    public int promptForTopping() {
+        System.out.print("Enter toppings:");
+        System.out.println("\n1) Lettuce");
+        System.out.println("2) Tomatoes");
+        System.out.println("3) Onions");
+        System.out.println("4) Peppers");
+        System.out.println("5) Pickles");
+        System.out.println("6) Olives");
+        System.out.println("7) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
-    public String promptForSauce() {
-        System.out.print("Enter a sauce (vinaigrette, mustard, ranch, mayo, spicy mustard) (or 'done' to finish): ");
-        return scanner.nextLine();
+    public int promptForSauce() {
+        System.out.print("Enter sauce:");
+        System.out.println("\n1) Vinaigrette");
+        System.out.println("2) Mustard");
+        System.out.println("3) Ranch");
+        System.out.println("4) Mayo");
+        System.out.println("5) Spicy Mustard");
+        System.out.println("6) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public String promptForDrinkSize() {
@@ -86,14 +107,30 @@ public class UserInterface {
         return scanner.nextLine();
     }
 
-    public String promptForDrinkFlavor() {
-        System.out.print("Enter drink flavor (Sprite, Coke, Pepsi, Lemonade, Sweet Tea, Unsweetened Tea, Water): ");
-        return scanner.nextLine();
+    public int promptForDrinkFlavor() {
+        System.out.print("Pick a drink:");
+        System.out.println("\n1) Sprite");
+        System.out.println("2) Coke");
+        System.out.println("3) Pepsi");
+        System.out.println("4) Lemonade");
+        System.out.println("5) Sweet Tea");
+        System.out.println("6) Unsweetened Tea");
+        System.out.println("7) Water");
+        System.out.println("8) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
-    public String promptForChipsType() {
-        System.out.print("Enter chip type (Lay's, Sun Chips, Doritos, Veggie Chips, Baked Cheetos): ");
-        return scanner.nextLine();
+    public int promptForChipsType() {
+        System.out.print("Pick chips:");
+        System.out.println("\n1) Lay's");
+        System.out.println("2) Sun Chips");
+        System.out.println("3) Doritos");
+        System.out.println("4) Veggie Chips");
+        System.out.println("5) Baked Cheetos");
+        System.out.println("6) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public boolean promptForConfirmation() {

@@ -3,10 +3,10 @@ package com.pluralsight.models;
 
 public class Drink {
     private final String size;
-    private final String flavor;
+    private final int flavor;
     private double price;
 
-    public Drink(String size, String flavor) {
+    public Drink(String size, int flavor) {
         this.size = size;
         this.flavor = flavor;
         setPrice();

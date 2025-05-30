@@ -32,21 +32,21 @@ public class Application {
                         }
 
                         while (true) {
-                            String cheese = ui.promptForCheese();
-                            if (cheese.equalsIgnoreCase("done")) break;
+                            int cheese = ui.promptForCheese();
+                            if (cheese== 5) break;
                             boolean extra = ui.promptForExtraCheese();
                             sandwich.addCheese(cheese, extra);
                         }
 
                         while (true) {
-                            String topping = ui.promptForTopping();
-                            if (topping.equalsIgnoreCase("done")) break;
+                            int topping = ui.promptForTopping();
+                            if (topping==7) break;
                             sandwich.addTopping(topping);
                         }
 
                         while (true) {
-                            String sauce = ui.promptForSauce();
-                            if (sauce.equalsIgnoreCase("done")) break;
+                            int sauce = ui.promptForSauce();
+                            if (sauce==6) break;
                             sandwich.addSauce(sauce);
                         }
 
@@ -55,12 +55,12 @@ public class Application {
 
                     case 2:
                         String drinkSize = ui.promptForDrinkSize();
-                        String flavor = ui.promptForDrinkFlavor();
+                        int flavor = ui.promptForDrinkFlavor();
                         order.addDrink(new Drink(drinkSize, flavor));
                         break;
 
                     case 3:
-                        String chipType = ui.promptForChipsType();
+                        int chipType = ui.promptForChipsType();
                         order.addChips(new Chips(chipType));
                         break;
 

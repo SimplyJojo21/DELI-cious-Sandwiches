@@ -39,7 +39,7 @@ public class Sandwich {
         }
     }
 
-    public void addCheese(String cheese, boolean isExtra) {
+    public void addCheese(int cheese, boolean isExtra) {
         cheeses.add(cheese + (isExtra ? " (extra)" : ""));
         if (isExtra) {
             if (size == 4) price += 0.30;
@@ -52,12 +52,12 @@ public class Sandwich {
         }
     }
 
-    public void addTopping(String topping) {
-        toppings.add(topping);
+    public void addTopping(int topping) {
+        toppings.add(String.valueOf(topping));
     }
 
-    public void addSauce(String sauce) {
-        sauces.add(sauce);
+    public void addSauce(int sauce) {
+        sauces.add(String.valueOf(sauce));
     }
 
     public double getPrice() {
