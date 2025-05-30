@@ -23,9 +23,14 @@ public class UserInterface {
         return Integer.parseInt(scanner.nextLine());
     }
 
-    public String promptForBreadType() {
-        System.out.print("Enter bread type (white, wheat, rye, wrap): ");
-        return scanner.nextLine();
+    public int promptForBreadType() {
+        System.out.print("Enter bread type:");
+        System.out.println("\n1) White");
+        System.out.println("2) Wheat");
+        System.out.println("3) Rye");
+        System.out.println("4) Wrap");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public int promptForSize() {
@@ -38,9 +43,17 @@ public class UserInterface {
         return scanner.nextLine().equalsIgnoreCase("yes");
     }
 
-    public String promptForMeat() {
-        System.out.print("Enter a meat (chicken, steak, salami, roast beef, bacon, tofu) (or 'done' to finish): ");
-        return scanner.nextLine();
+    public int promptForMeat() {
+        System.out.print("Enter meat type:");
+        System.out.println("\n1) Chicken");
+        System.out.println("2) Steak");
+        System.out.println("3) Salami");
+        System.out.println("4) Roast Beef");
+        System.out.println("3) Bacon");
+        System.out.println("4) Tofu");
+        System.out.println("5) Done");
+        System.out.print("Enter choice: ");
+        return Integer.parseInt(scanner.nextLine());
     }
 
     public boolean promptForExtraMeat() {

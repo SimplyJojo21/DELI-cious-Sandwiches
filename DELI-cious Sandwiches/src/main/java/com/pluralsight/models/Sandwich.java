@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich {
-    private final String breadType;
+    private final int breadType;
     private final int size;
     private final boolean toasted;
     private final List<String> meats = new ArrayList<>();
@@ -13,7 +13,7 @@ public class Sandwich {
     private final List<String> sauces = new ArrayList<>();
     private double price;
 
-    public Sandwich(String breadType, int size, boolean toasted) {
+    public Sandwich(Integer breadType, int size, boolean toasted) {
         this.breadType = breadType;
         this.size = size;
         this.toasted = toasted;
@@ -26,7 +26,7 @@ public class Sandwich {
         else if (size == 12) price = 8.50;
     }
 
-    public void addMeat(String meat, boolean isExtra) {
+    public void addMeat(int meat, boolean isExtra) {
         meats.add(meat + (isExtra ? " (extra)" : ""));
         if (isExtra) {
             if (size == 4) price += 0.50;

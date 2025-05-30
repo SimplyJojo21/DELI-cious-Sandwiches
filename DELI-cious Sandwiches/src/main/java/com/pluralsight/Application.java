@@ -19,14 +19,14 @@ public class Application {
                 int menuChoice = ui.showOrderMenu();
                 switch (menuChoice) {
                     case 1:
-                        String bread = ui.promptForBreadType();
+                        int bread = ui.promptForBreadType();
                         int size = ui.promptForSize();
                         boolean toasted = ui.promptForToasted();
-                        Sandwich sandwich = new Sandwich(bread, size, toasted);
+                        Sandwich sandwich = new Sandwich (bread, size, toasted);
 
                         while (true) {
-                            String meat = ui.promptForMeat();
-                            if (meat.equalsIgnoreCase("done")) break;
+                            int meat = ui.promptForMeat();
+                            if (meat == 5) break;
                             boolean extra = ui.promptForExtraMeat();
                             sandwich.addMeat(meat, extra);
                         }
