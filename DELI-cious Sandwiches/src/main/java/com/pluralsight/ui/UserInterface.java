@@ -49,7 +49,7 @@ public class UserInterface {
     }
 
     public String promptForCheese() {
-        System.out.print("Enter a cheese (or 'done' to finish): ");
+        System.out.print("Enter a cheese (American, Swiss, Pepper Jack, Cheddar) (or 'done' to finish): ");
         return scanner.nextLine();
     }
 
@@ -59,12 +59,12 @@ public class UserInterface {
     }
 
     public String promptForTopping() {
-        System.out.print("Enter a topping (or 'done' to finish): ");
+        System.out.print("Enter a topping (lettuce, tomatoes, onions, peppers, pickles, olives) (or 'done' to finish): ");
         return scanner.nextLine();
     }
 
     public String promptForSauce() {
-        System.out.print("Enter a sauce (or 'done' to finish): ");
+        System.out.print("Enter a sauce (vinaigrette, mustard, ranch, mayo, spicy mustard) (or 'done' to finish): ");
         return scanner.nextLine();
     }
 
@@ -74,12 +74,12 @@ public class UserInterface {
     }
 
     public String promptForDrinkFlavor() {
-        System.out.print("Enter drink flavor: ");
+        System.out.print("Enter drink flavor (Sprite, Coke, Pepsi, Lemonade, Sweet Tea, Unsweetened Tea, Water): ");
         return scanner.nextLine();
     }
 
     public String promptForChipsType() {
-        System.out.print("Enter chip type: ");
+        System.out.print("Enter chip type (Lay's, Sun Chips, Doritos, Veggie Chips, Baked Cheetos): ");
         return scanner.nextLine();
     }
 
