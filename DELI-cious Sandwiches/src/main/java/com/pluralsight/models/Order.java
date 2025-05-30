@@ -1,9 +1,9 @@
-package com.pluralsight;
+package com.pluralsight.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderScreen {
+public class Order {
     private final List<Sandwich> sandwiches = new ArrayList<>();
     private final List<Drink> drinks = new ArrayList<>();
     private final List<Chips> chips = new ArrayList<>();

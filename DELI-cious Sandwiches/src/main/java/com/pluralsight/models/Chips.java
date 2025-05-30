@@ -1,7 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.models;
 
 public class Chips {
-    private String type;
+    private final String type;
     private final double price = 1.50;
 
     public Chips(String type) {
